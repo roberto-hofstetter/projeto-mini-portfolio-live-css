@@ -1,0 +1,152 @@
+body {	
+	font-family: 'VT323', monospace;
+
+	background-image: url('../imagens/fundo-site.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	color: #f3f3f3;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 10px;
+}
+
+.cartao {
+	background-color: #070d12;
+	border: 2px solid #e126d9;
+	width: 370px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.cartao .perfil {
+	padding-top: 20px;
+ 	display: flex;
+	flex-direction: column;	
+	align-items: center;
+	gap: 10px;
+}
+
+.cartao .perfil img {
+	border-radius: 50%;	
+	border: 4px solid #02d08f;
+}
+
+.cartao .perfil .nome {	
+	font-size: 26px;
+}
+
+.cartao .perfil .cargo{
+    font-size: 20px;
+    color: #b8bbc5;
+}
+
+.cartao .conteudo {
+	
+	margin-top: 15px;
+}
+
+.cartao .abas {
+	display: flex;		
+}
+
+.cartao .abas .aba {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.cartao .abas img {
+	max-width: 30px;
+}
+
+.cartao .abas .aba.selecionado {
+	background-color: #262626;	
+}
+
+.cartao .abas .aba:hover {
+	background-color: #414141;
+}
+
+.informacoes-perfil{
+	background-color: #262626;
+	padding: 15px;
+	text-align: center;
+	min-height: 280px;
+}
+
+.informacoes-perfil .sub-titulo {
+	font-size: 22px;
+	margin-bottom: 25px;
+}
+
+.informacao .descricao {
+	max-height: 200px;
+	overflow-y: auto;
+	padding: 0 15px;
+}
+
+.informacao .descricao p {
+	text-align: left;
+	font-size: 20px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.informacao .descricao span {
+	color: #02d08f;
+}
+
+.redes-sociais {
+	display: flex;
+	flex-direction: column;	
+	gap: 25px;	
+	align-items: center;
+}
+
+.redes-sociais li {
+	background-color: #02d08f;
+	width: 250px;
+}
+
+.redes-sociais a {	
+	color: #f3f3f3;
+	padding: 10px;
+	display: block;
+}
+
+.redes-sociais .curriculo {
+	background: #06c185;
+}
+
+.redes-sociais .linkedin {
+	background: #1d87bd;
+}
+
+.redes-sociais .github {
+	background: #545454;
+}
+
+.redes-sociais a{
+	transition: opacity 0.3s ease-in-out;
+}
+
+.redes-sociais a:hover{
+	opacity: 0.8;
+}
+
+.informacoes-perfil .informacao {
+	display: none;	
+}
+
+.informacoes-perfil .informacao.selecionado {
+	display: block;
+
+}
